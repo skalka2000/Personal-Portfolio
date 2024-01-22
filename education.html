@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <header>
+        <div class="name_title"><h1>Piotr Skała</h1>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home-intro">
+        <div class="intro-text">
+            <h2>Master of Science in Data Analytics</h2>
+            <h2>Bachelor of Engineering in Systems Engineering</h2>
+            <h1>My Education Journey</h1>
+            <p>I hold a Master’s in Data Analytics and a Bachelor’s in Systems Engineering from the University of Warwick. I am passionate about transforming data into insights and have a deep love for learning new things. My strong communication skills enable me to articulate complex concepts clearly, fostering understanding to drive success.
+
+            </p>
+        </div>
+        <div class="intro-image">
+            <img src="IMG_4360_2.JPG" alt="Piotr Skala" class="profile-image">
+        </div>
+    </section>
+    
+
+    <section id="education" data-aos="fade-up" data-aos-delay="100">
+        <h1>Education</h1>
+        <div class="timeline" >
+                        <!-- Timeline event 0 -->
+                        <div class="timeline__event" data-aos="fade-up" data-aos-delay="100" onclick="navigateToSection('bachelor-cognitive-science')">
+                            <div class="timeline__date">September 2023 - Present</div>
+                            <div class="timeline__body">
+                              <div class="timeline__content">
+                                <h3>Bachelor's Degree in Cognitive Science</h3>
+                                <h3>University of Szczecin</h3>
+                              </div>
+                              <div class="timeline__logo">
+                                <img src="US_logo.jpg" alt="University of Szczecin Logo">
+                              </div>
+                            </div>
+                          </div>
+            <!-- Timeline event 1 -->
+            <div class="timeline__event" data-aos="fade-up" data-aos-delay="100" onclick="navigateToSection('msc-data-analytics')">
+                <div class="timeline__date">September 2022 - December 2023</div>
+              <div class="timeline__body">
+                <div class="timeline__content">
+                  <h3>Master of Science in Data Analytics</h3>
+                  <h3>University of Warwick</h3>
+                  <p>Grade: Distinction</p>
+                </div>
+                <div class="timeline__logo">
+                  <img src="Warwick_logo.jpg" alt="University of Warwick Logo">
+                </div>
+              </div>
+
+            </div>
+            <!-- Timeline event 2 -->
+            <div class="timeline__event" data-aos="fade-up" data-aos-delay="100" onclick="navigateToSection('beng-systems-engineering')">
+                <div class="timeline__date">September 2019 - July 2022</div>
+              <div class="timeline__body">
+                <div class="timeline__content">
+                  <h3>Bachelor of Engineering in Systems Engineering</h3>
+                  <h3>University of Warwick</h3>
+                  <p>Grade: First-Class Honours</p>
+                </div>
+                <div class="timeline__logo">
+                  <img src="Warwick_logo.jpg" alt="University of Warwick Logo">
+                </div>
+              </div>
+            </div>
+                    <!-- Timeline event 3 -->
+                    <div class="timeline__event" data-aos="fade-up" data-aos-delay="100">
+                        <div class="timeline__date">September 2016 - May 2019</div>
+                        <div class="timeline__body">
+                          <div class="timeline__content">
+                            <h3>Secondary Education</h3>
+                            <h3>XIII Liceum Ogólnokształcące w Szczecinie</h3>
+                          </div>
+                          <div class="timeline__logo">
+                            <img src="XIII_logo.jpg" alt="XIII Logo">
+                          </div>
+                        </div>
+                      </div>
+          </div>
+
+    </section>
+
+<!-- Bachelor of Cognitive Science Section -->
+<section class="education-detail-section" id="bachelor-cognitive-science" data-aos="fade-up" data-aos-delay="100">
+    <h3>University of Szczecin</h3>
+    <h2>Bachelor of Cognitive Science</h2>
+    <div data-aos="fade-up" data-aos-delay="100">
+    <h3>Significant Modules</h3>
+    <!-- Cognitive Psychology Module -->
+    <div class="module-item" onclick="toggleDetail('module-cognitive-psychology')">
+        <h4>Cognitive Psychology</h4>
+        <div id="module-cognitive-psychology" class="detail-content">
+            <ul>
+                <li>Mental Representations</li>
+                <li>Attention Processes</li>
+                <li>Perception Mechanisms</li>
+                <li>Memory Functions</li>
+                <li>Consciousness and Awareness</li>
+                <li>Problem Solving Techniques</li>
+                <li>Decision Making Processes</li>
+                <li>Language</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Cognitive Neuroscience Module -->
+    <div class="module-item" onclick="toggleDetail('module-cognitive-neuroscience')">
+        <h4>Cognitive Neuroscience</h4>
+        <div id="module-cognitive-neuroscience" class="detail-content">
+            <ul>
+                <li>Neural Mechanisms Behind Perception and Behaviour</li>
+                <li>Neuroscience Foundations<li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Philosophy Module -->
+    <div class="module-item" onclick="toggleDetail('module-philosophy')">
+        <h4>Philosophy</h4>
+        <div id="module-philosophy" class="detail-content">
+            <ul>
+                <li>Ethics and Morality</li>
+                <li>Philosophy of Mind</li>
+                <li>Mind-Body Dualism</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Logic Module -->
+    <div class="module-item" onclick="toggleDetail('module-logic')">
+        <h4>Logic</h4>
+        <div id="module-logic" class="detail-content">
+            <ul>
+                <li>Zeroth Order Logic</li>
+                <li>First and Second Order Logic</li>
+                <li>Logical Fallacies and Argumentation</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- UX/UI Module -->
+    <div class="module-item" onclick="toggleDetail('module-ux-ui')">
+        <h4>UX/UI</h4>
+        <div id="module-ux-ui" class="detail-content">
+            <ul>
+                <li>HTML Fundamentals</li>
+                <li>Cascading Style Sheets (CSS)</li>
+                <li>Webpage Design Principles</li>
+                <li>Responsive Design Techniques</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section id="msc-data-analytics" class="education-detail-section" data-aos="fade-up" data-aos-delay="100">
+    <h3>University of Warwick</h3>
+    <h2>Master of Science in Data Analytics</h2>
+    <!-- Modules -->
+    <div data-aos="fade-up" data-aos-delay="100">
+    <h3>Significant Modules</h3>
+    <div class="module-item" onclick="toggleDetail('module-fade-up')">
+        <h4>Data Analytics</h4>
+        <div id="module-fda" class="detail-content">
+            <ul>
+                <li>Hypothesis Testing</li>
+                <li>Probability Distributions</li>
+                <li>Linear Regression</li>
+                <li>Multilinear Regression</li>
+                <li>Non-linear Regression</li>
+                <li>Ridge Regression</li>
+                <li>Lasso Regression</li>
+                <li>Logistic Regression</li>
+                <li>Maximum Likelihood Estimation (MLE)</li>
+                <li>k-NN</li>
+                <li>Naïve Bayes</li>
+                <li>Bayesian Inference</li>
+                <li>Decision Trees</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="module-item" onclick="toggleDetail('module-data-mining')">
+        <h4>Machine Learning</h4>
+        <div id="module-data-mining" class="detail-content">
+            <ul>
+                <li>Support Vector Machines</li>
+                <li>Support Vector Regression</li>
+                <li>Principal Component Analysis (PCA)</li>
+                <li>Neural Networks</li>
+                <li>Backpropagation</li>
+                <li>Training, Testing and Validation</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="module-item" onclick="toggleDetail('module-computing')">
+        <h4>Computing</h4>
+        <div id="module-computing" class="detail-content">
+            <ul>
+                <li>Programming</li>
+                <li>Data Analytics</li>
+                <li>Data Visualization</li>
+                <li>Algorithms</li>
+                <li>Object-Oriented-Programming (OOP)</li>
+                <li>Logic</li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+<!-- Natural Language Processing -->
+<div class="module-item" onclick="toggleDetail('module-nlp')">
+    <h4>Natural Language Processing</h4>
+    <div id="module-nlp" class="detail-content">
+        <ul>
+            <li>Text Preprocessing</li>
+            <li>Word Embeddings</li>
+            <li>POS tagging</li>
+            <li>Sentiment Analysis</li>
+            <li>Hidden Markov Models</li>
+            <li>Statistical Language Models</li>
+            <li>Sequence-to-Sequence Models</li>
+            <li>Transformers</li>
+            <li>Attention Mechanisms</li>
+            <li>Recommendation Systems</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Agent-Based Systems -->
+<div class="module-item" onclick="toggleDetail('module-agent-based-systems')">
+    <h4>Agent-Based Systems</h4>
+    <div id="module-agent-based-systems" class="detail-content">
+        <ul>
+            <li>Design of Intelligent Agent Systems</li>
+            <li>Opponent Modelling</li>
+            <li>Reinforcement Learning</li>
+            <li>Auction Theory</li>
+            <li>Mechanism Design</li>
+            <li>Evolutionary Game Theory</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Algorithmic Game Theory -->
+<div class="module-item" onclick="toggleDetail('module-algorithmic-game-theory')">
+    <h4>Algorithmic Game Theory</h4>
+    <div id="module-algorithmic-game-theory" class="detail-content">
+        <ul>
+            <li>Game Theory Concepts</li>
+            <li>Algorithmic Mechanism Design</li>
+            <li>Combinatorial Auctions</li>
+        </ul>
+    </div>
+</div>    
+    
+    </div>
+    <!-- Repeat for other modules -->
+
+    <!-- Projects -->
+    <div data-aos="fade-up" data-aos-delay="100">
+        <h3>Significant Projects</h3>
+    <div class="project-item" onclick="toggleDetail('project-msc-dissertation')">
+        <h4>MSc Thesis in Computational Neuroscience</h4>
+        <div id="project-msc-dissertation" class="detail-content">
+            <h4>Analysing how functional connectivity changes across different Human Connectome Project tasks. 
+                Supervised by Professor Edmund Rolls. </h4>
+            <p>Key areas of focus included:</p>
+            <ul>
+                <li>Machine Learning: Used SVMs and Neural Networks for task prediction from subject’s brain data.</li>
+                <li>Statistical Analysis: Identified statistically significant task-related differences in brain activity.</li>
+                <li>Neuroscientific foundations: Understanding the brain's networks and the bases of cognition and behaviour.</li>
+                <li>Research Writing: Compiled findings, methodologies, and analyses into a comprehensive dissertation.</li>
+                <li>Collaboration with Prof. Edmund T. Rolls, a leading figure in neuroscience.</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1U7719loxqDBSn8Fnv4r-kO6BGmZ-NT81/view?usp=sharing" target="_blank" class="pdf-link">View Dissertation (PDF)</a>
+
+        </div>
+    </div>
+    
+    <div class="project-item" onclick="toggleDetail('project-auction-bot')">
+        <h4>Second-prize Auction Bot Design</h4>
+        <div id="project-auction-bot" class="detail-content">
+            <p>Developed a utility-maximizing bot using Object-Oriented Programming in Python, employing a strategic tactic that outperformed 90% of peer submissions.</p>
+            <a href="https://drive.google.com/file/d/1elcNZIISoe_srBlSpYBV6QOM7W46MGNI/view?usp=drive_link" target="_blank" class="pdf-link">View Project (PDF)</a>
+
+        </div>
+    </div>
+    
+    <div class="project-item" onclick="toggleDetail('project-sentiment-analysis')">
+        <h4>Sentiment Analysis of Tweets</h4>
+        <div id="project-sentiment-analysis" class="detail-content">
+            <p>Conducted sentiment analysis of tweets using word embeddings, SVMs, Naïve Bayes, and LSTM in PyTorch and Scikit-Learn.</p>
+            <a href="https://drive.google.com/file/d/1elcNZIISoe_srBlSpYBV6QOM7W46MGNI/view?usp=sharing" target="_blank" class="pdf-link">View Project (PDF)</a>
+
+        </div>
+    </div>
+    
+    <div class="project-item" onclick="toggleDetail('project-film-recommendation')">
+        <h4>Film Recommendation System</h4>
+        <div id="project-film-recommendation" class="detail-content">
+            <p>Created a film recommendation system using user-based collaborative filtering in Python.</p>
+            <a href="https://drive.google.com/file/d/1elcNZIISoe_srBlSpYBV6QOM7W46MGNI/view?usp=sharing" target="_blank" class="pdf-link">View Project (PDF)</a>
+
+        </div>
+    </div>
+    </div>
+</div>
+</section>
+
+<section data-aos="fade-up" data-aos-delay="100" id="beng-systems-engineering" class="education-detail-section" >
+    <h3>University of Warwick</h3>
+    <h2>Bachelor of Engineering in Systems Engineering</h2>
+    <div data-aos="fade-up" data-aos-delay="100">
+    <h3>Significant Modules</h3>
+<!-- Systems Modelling -->
+<div class="module-item" onclick="toggleDetail('module-systems-modelling')">
+    <h4>Systems Modelling</h4>
+    <div id="module-systems-modelling" class="detail-content">
+        <ul>
+            <li>1st and 2nd Order Systems</li>
+            <li>Transfer Function Analysis</li>
+            <li>Feedback Control</li>
+            <li>State-space Models</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Signal Processing -->
+<div class="module-item" onclick="toggleDetail('module-signal-processing')">
+    <h4>Signal Processing</h4>
+    <div id="module-signal-processing" class="detail-content">
+        <ul>
+            <li>Analog and Digital System Design</li>
+            <li>Frequency Response</li>
+            <li>Fourier Transform</li>
+            <li>Signal Estimation</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Electronics -->
+<div class="module-item" onclick="toggleDetail('module-electronics')">
+    <h4>Electronics</h4>
+    <div id="module-electronics" class="detail-content">
+        <ul>
+            <li>Differential and Operational Amplifiers</li>
+            <li>Oscillators</li>
+            <li>Diodes</li>
+            <li>BJTs and MOSFETs</li>
+        </ul>
+    </div>
+</div>
+
+<!-- System Development -->
+<div class="module-item" onclick="toggleDetail('module-system-development')">
+    <h4>System Development</h4>
+    <div id="module-system-development" class="detail-content">
+        <ul>
+            <li>App Development</li>
+            <li>V-Model</li>
+            <li>Customer Requirements</li>
+            <li>SysML Diagrams</li>
+            <li>Flow Charts</li>
+            <li>Verification and Validation</li>
+        </ul>
+    </div>
+</div>
+<!-- Image and Video Analysis -->
+<div class="module-item" onclick="toggleDetail('module-image-video-analysis')">
+    <h4>Image and Video Analysis</h4>
+    <div id="module-image-video-analysis" class="detail-content">
+        <ul>
+            <li>Feature Extraction</li>
+            <li>Filter Kernels</li>
+            <li>Edge Detection</li>
+            <li>Convolutional Neural Networks</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Automation and Robotics -->
+<div class="module-item" onclick="toggleDetail('module-automation-robotics')">
+    <h4>Automation and Robotics</h4>
+    <div id="module-automation-robotics" class="detail-content">
+        <ul>
+            <li>Robot Programming</li>
+            <li>Robot Simulation</li>
+            <li>Sensors</li>
+            <li>Machine Vision</li>
+            <li>Robot Kinematics</li>
+        </ul>
+    </div>
+</div>
+<div data-aos="fade-up" data-aos-delay="100">
+    <h3>Significant Projects</h3>
+    <div class="project-item" onclick="toggleDetail('hand-gesture')">
+        <h4>Hand Gesture Recognition App</h4>
+        <div id="hand-gesture" class="detail-content">
+            <p>Hand-gesture recognition app using image processing and a convolutional neural network in MATLAB.</p>
+        </div>
+    </div>
+    <div class="project-item" onclick="toggleDetail('lift-design')">
+        <h4>System Design of a Lift</h4>
+        <div id="lift-design" class="detail-content">
+            <p>System design of a lift meeting different user and technical requirements using flow charts in MATLAB/Simulink.</p>
+        </div>
+    </div>
+    <div class="project-item" onclick="toggleDetail('PID-design')">
+        <h4>PID Control Design of a DC Motor</h4>
+        <div id="PID-design" class="detail-content">
+            <p>System identification and PID Control Design of a DC Motor using Arduino and MATLAB/Simulink.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+    <footer>
+        <p>&copy; 2024 Piotr Skala.</p>
+    </footer>
+
+    <script>
+        // Adjust the 'offset' variable to match the height of your navigation bar
+        var offset = 80;
+        
+        window.addEventListener('DOMContentLoaded', (event) => {
+            if(window.location.hash) {
+                var sectionId = window.location.hash.replace('#', ''); // Remove the '#' from the hash
+                setTimeout(function() {
+                    navigateToSection(sectionId);
+                }, 100); // Timeout to allow page layout to settle
+            }
+        });
+        
+        function navigateToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                var offsetTop = section.offsetTop - offset;
+                window.scroll({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        }
+        
+        function toggleDetail(detailId) {
+            var detail = document.getElementById(detailId);
+            var isHidden = detail.style.display === 'none';
+            detail.style.display = isHidden ? 'block' : 'none';
+        }
+        </script>
+        
+
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

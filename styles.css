@@ -1,60 +1,422 @@
 /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif; /* Professional and modern font */
 }
 
-header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
+body {
+    background: #0A192F; /* Deep Space Blue */
+    color: #F2F2F2; /* Off-White */
+    line-height: 1.6;
 }
 
-header h1 {
+body {
     margin: 0;
-    padding: 0 20px;
+    padding: 0;
+    background-image: url('neurons-hd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+a {
+    color: #00B4D8; /* Vivid Sky Blue */
+    text-decoration: none;
 }
 
-/* Navigation Menu Styles */
+a:hover {
+    color: #FE6D73; /* Soft Red */
+}
+
+/* Header and Navigation (Unchanged) */
+header {
+    background: #0A192F;
+    color: #F2F2F2;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
-/* Section Styles */
-section#home {
-    padding: 20px;
+/* Home Intro Section (Unchanged) */
+#home-intro {
+    background: #0A192F;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 90px 50px; /* Adjusted for fixed header */
+    margin-top: 60px; /* Adjusted for fixed header */
 }
 
-section#home h1, section#home h2 {
-    color: #333;
-}
-
-section#home p {
+.intro-text h1, .intro-text h2, .intro-text p {
     margin-bottom: 20px;
 }
 
-section#home a {
-    color: #0275d8;
-    text-decoration: none;
+.intro-text h1 {
+    font-size: 2.5em;
+    color: #00B4D8; /* Vivid Sky Blue for main heading */
 }
 
-section#home a:hover {
-    text-decoration: underline;
+.intro-text h2 {
+    font-size: 1.5em;
+    color: #FE6D73; /* Soft Red for subtitle */
 }
+
+.intro-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 50%; /* Circle image */
+    border: 4px solid #00B4D8;
+}
+
+/* Section Styles - Expertise, Education, Projects */
+#expertise, #education-summary, #projects, #education, .education-detail-section{
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Styles - Expertise, Education, Projects */
+.education-detail-section{
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#contact{
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 80px;
+    margin: 20px auto;
+    max-width: 1400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    color: #00B4D8; /* Vivid Sky Blue */
+    margin-bottom: 15px;
+}
+
+#contact h3 {
+    color: #0A192F; 
+    margin-top: 20px;
+}
+.section-title {
+    border-bottom: 2px solid #00B4D8;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Minimalist Underlined List Styles */
+#expertise ul, #education-summary ul, #projects ul, #education  .education-detail-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#expertise li, #education-summary li, #projects li, #education .education-detail-section li{
+    color: #333; /* Dark Gray */
+    padding: 5px 0;
+    border-bottom: 1px solid #00B4D8; /* Vivid Sky Blue */
+    margin-bottom: 10px;
+}
+/* Footer Styles */
+footer {
+background: #0A192F;
+color: #F2F2F2;
+text-align: center;
+padding: 10px 0;
+}
+
+/* Responsive Design Adjustments */
+@media screen and (max-width: 768px) {
+header, #home-intro, #expertise, #education-summary, #education, #projects .education-detail-section, #contact{
+flex-direction: column;
+text-align: center;
+}
+nav ul {
+    flex-direction: column;
+}
+
+nav ul li {
+    margin: 5px 0;
+}
+
+.intro-image img {
+    max-width: 80%;
+    margin-top: 20px;
+}
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2em auto;
+  }
+  
+  .timeline__event {
+    background: #1C1F2A; /* Dark Background for each event */
+    color: #F2F2F2; /* Off-White Text */
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .timeline__date {
+    background: #00B4D8; /* Vivid Sky Blue Date Box */
+    color: #FFFFFF; /* White Date Text */
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: -100px;
+    width: 220px;
+  }
+  
+  .timeline__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .timeline__content {
+    flex-grow: 1;
+  }
+  
+  .timeline__content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+  }
+  
+  .timeline__content p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .timeline__logo {
+    margin-left: 20px; /* Spacing between content and logo */
+  }
+  
+  .timeline__logo img {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline__event {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .timeline__body {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  
+    .timeline__logo {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  
+    .timeline__logo img {
+      width: 50px; /* Adjust as needed for smaller screens */
+    }
+  }
+
+  .timeline__event {
+    cursor: pointer; /* Indicates the element is clickable */
+    /* Other styles... */
+}
+
+
+
+
+
+.education-detail-section h2 {
+    color: #00B4D8; /* Vivid Sky Blue, consistent with other headings */
+    margin-bottom: 15px;
+}
+
+.education-detail-section h3 {
+    color: #FE6D73; /* Soft Red for sub-headings */
+    margin-top: 20px;
+}
+
+.education-detail-section h4 {
+    color: #F2F2F2; 
+    margin-top: 20px;
+}
+
+.module-item, .project-item {
+    background-color: #00B4D8; /* Primary Vivid Sky Blue */
+    color: #FFFFFF; /* White text for better readability */
+    border-radius: 8px;
+    padding: 6px;
+    padding-top: 2px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.module-item:hover, .project-item:hover {
+    background-color: #54dcfa; /* lighter blue for hover */
+}
+
+.detail-content {
+    background-color: #00B4D8; /* Darker blue for hover */
+    color: #FFFFFF; /* White text */
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: none; /* Hidden by default */
+}
+
+/* Customizing bullet points */
+.detail-content ul {
+    list-style: none; /* Removes default list style */
+    padding-left: 0; /* Resets default padding */
+    margin-left: 20px; /* Adds some space to the left */
+}
+
+.detail-content ul li {
+    position: relative;
+    padding-left: 20px; /* Space for custom bullet */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.detail-content ul li:before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute;
+    left: 0; 
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px; /* Size of the bullet */
+    height: 8px; /* Size of the bullet */
+    background-color: #FFFFFF; /* White bullet */
+    border-radius: 50%; /* Makes it circular */
+}
+
+.pdf-link {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #00B4D8; /* Vivid Sky Blue */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none; /* Removes underline */
+}
+
+.pdf-link:hover {
+    background-color: #008CBA; /* Darker shade on hover */
+}
+
+.contact-info
+{   align-items: center;
+    margin-top: 20px;
+
+}
+  
+.contact-info p {
+    margin-bottom: 2px; /* Adds space below each paragraph */
+}
+
+/* Alternatively, if you want to add space around each link */
+.contact-info a {
+    display: inline-block; /* Allows margin to be applied */
+    margin-bottom: 25px; /* Adds space below each link */
+    color: #00B4D8; /* Adjust the color as per your theme */
+    text-decoration: none; /* Removes underline */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+}
+
+.contact-info i {
+    margin-right: 10px; /* Adds space between the icon and the text */
+}
+
+#skills {
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#skills .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.skills-category {
+    margin-bottom: 30px;
+}
+
+.skills-category h3 {
+    color: #00B4D8; /* Sky Blue */
+    margin-bottom: 10px;
+}
+
+.skills-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-category ul li {
+    background-color: #e8f8ff; /* Light blue */
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.skills-category p {
+    background-color: #e8f8ff; /* Light blue */
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+
+
+  
